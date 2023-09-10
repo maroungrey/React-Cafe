@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Navbar, Nav, NavLink } from 'react-bootstrap'
+import Button from 'react-bootstrap/Button';
 import Logo from "../assets/logo.svg"
 
 
@@ -52,8 +53,9 @@ export default function AppNavbar() {
             }        
           </Nav>
           <Nav>
-            <Nav.Link className="m-1"><i class="fa-brands fa-facebook-f"></i></Nav.Link>
-            <Nav.Link className="m-1"><i class="fa-brands fa-instagram"></i></Nav.Link>
+            <Nav.Link className="my-3"><i class="fa-brands fa-facebook-f"></i></Nav.Link>
+            <Nav.Link className="my-3"><i class="fa-brands fa-instagram"></i></Nav.Link>
+            <Nav.Link className="m-2"><Button>Order Online</Button></Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

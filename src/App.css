@@ -10,8 +10,14 @@ a, a:hover {
 button, button:hover {
   background-color: #505050 !important;
 }
+button.navbar-toggler {
+  background-color: transparent !important;
+}
 .footer-link {
   text-decoration: none !important;
+}
+.footer-border {
+  border-top: solid 1px #505050;
 }
 
 .vertical-center {
@@ -30,11 +36,32 @@ button, button:hover {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+  height: 400px;
 }
-
-.parallax-card {
-  background: rgba(255, 255, 255, 0.5);
-  border-radius: 10px;
+.bg-image-text-container {
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  position: absolute;
+}
+.bg-image-text-bg {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 2rem 2rem 1rem;
+  outline: 2px solid rgba(255, 255, 255, 0.5);
+  outline-offset: 5px;
+}
+.bg-image-text-bg span {
+  font-size: 4.5rem;
+}
+.bg-pattern {
+  background-image: url("https://placehold.co/600x400");
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 
 @media screen and (min-width: 992px) {
