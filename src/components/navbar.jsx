@@ -5,13 +5,25 @@ import Logo from "../assets/logo.svg"
 
 const menuData = [
   {
-      path:'/about',
-      name: 'About'
+    path:'/menu',
+    name: 'Menu'
+  },
+  {
+    path: '/reservations',
+    name: 'Reservations'
+  },
+  {
+    path: '/events',
+    name: 'Events'
+  },
+  {
+    path: '/about',
+    name: 'About'
   },
   {
     path: '/contact',
     name: 'Contact'
-},
+  },
 ]
 
 export default function AppNavbar() {
@@ -39,10 +51,10 @@ export default function AppNavbar() {
                 ))
             }        
           </Nav>
-          {/* <Nav>
+          <Nav>
             <Nav.Link className="m-1"><i class="fa-brands fa-facebook-f"></i></Nav.Link>
             <Nav.Link className="m-1"><i class="fa-brands fa-instagram"></i></Nav.Link>
-          </Nav> */}
+          </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
