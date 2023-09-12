@@ -1,21 +1,13 @@
 import React from "react";
 import { Container, Navbar, Nav, NavLink } from 'react-bootstrap'
 import Button from 'react-bootstrap/Button';
-import Logo from "../assets/logo.svg"
+import Logo from "../assets/logo.png"
 
 
 const menuData = [
   {
     path:'/menu',
     name: 'Menu'
-  },
-  {
-    path: '/reservations',
-    name: 'Reservations'
-  },
-  {
-    path: '/events',
-    name: 'Events'
   },
   {
     path: '/about',
@@ -29,14 +21,14 @@ const menuData = [
 
 export default function AppNavbar() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" sticky="top" className="header">
       <Container>
         <Navbar.Brand href='/' className="me-auto">
             {/* LOGO */}
             <img
               src={Logo}
-              width="190"
-              height="50"
+              width="219"
+              height="79"
               className="d-inline-block align-top"
               alt="Logo"
             />
@@ -53,9 +45,9 @@ export default function AppNavbar() {
             }        
           </Nav>
           <Nav>
-            <Nav.Link className="my-3"><i class="fa-brands fa-facebook-f"></i></Nav.Link>
-            <Nav.Link className="my-3"><i class="fa-brands fa-instagram"></i></Nav.Link>
-            <Nav.Link className="m-2"><Button>Order Online</Button></Nav.Link>
+            <Nav.Link className="my-3"><i className="fa-brands fa-facebook-f"></i></Nav.Link>
+            <Nav.Link className="my-3"><i className="fa-brands fa-instagram"></i></Nav.Link>
+            <Nav.Link className="m-2" href='https://www.doordash.com/home/'><Button>Order Online</Button></Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

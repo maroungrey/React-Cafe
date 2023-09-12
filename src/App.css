@@ -4,6 +4,9 @@ body {
   background-color: #fcfcfc;
   color: #505050;
 }
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Slab', serif;
+}
 a, a:hover {
   color: #505050 !important;
 }
@@ -16,9 +19,14 @@ button.navbar-toggler {
 .footer-link {
   text-decoration: none !important;
 }
-.footer-border {
+.line-border {
   border-top: solid 1px #505050;
 }
+.header {
+  background-color: #fcfcfc;
+  box-shadow: 0px 3px 10px #ccc;
+}
+
 
 .vertical-center {
   position: absolute;
@@ -27,7 +35,6 @@ button.navbar-toggler {
   transform: translateY(-50%);
 }
 .bg-image {
-  background-image: url("https://placehold.co/600x400");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -45,27 +52,33 @@ button.navbar-toggler {
   position: absolute;
 }
 .bg-image-text-bg {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.9);
   padding: 2rem 2rem 1rem;
-  outline: 2px solid rgba(255, 255, 255, 0.5);
+  outline: 2px solid rgba(255, 255, 255, 0.9);
   outline-offset: 5px;
 }
 .bg-image-text-bg span {
   font-size: 4.5rem;
 }
-.bg-pattern {
-  background-image: url("https://placehold.co/600x400");
-  height: 100%;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-}
+
 
 @media screen and (min-width: 992px) {
   .parallax-card {
 max-width:60%
   }
 }
+
+
+.menu-item {
+  width:200px;
+}
+#menu-banner {
+  background-image: url("./assets/menu-banner.jpg");
+}
+#about-banner {
+  background-image: url("./assets/about-banner.jpg");
+}
+#contact-banner {
+  background-image: url("./assets/contact-banner.jpg");
+}
+

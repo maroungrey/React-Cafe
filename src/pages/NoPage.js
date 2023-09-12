@@ -6,23 +6,21 @@ import AppFooter from '../components/footer';
 export default function NoPage() {
   return (
     <div>
-    <header className="App-header">
-        <AppNavbar />
-    </header>
+    <AppNavbar />
 
-<Container>
-<   Row>
-        <Col>
-            <div className='mx-auto my-5 text-center'>
-                <h1>404</h1>
-                <br></br>
-                <div className="w-75 mx-auto">
-                    <p>Oops! Looks like this page doesn't exists</p>
+    <Container>
+        <Row>
+            <Col>
+                <div className='mx-auto my-5 text-center'>
+                    <h1>404</h1>
+                    <br></br>
+                    <div className="w-75 mx-auto">
+                        <p>Oops! Looks like this page doesn't exists</p>
+                    </div>
                 </div>
-            </div>
-        </Col>
-    </Row>
-</Container>
+            </Col>
+        </Row>
+    </Container>
 
     <footer>
       <AppFooter />

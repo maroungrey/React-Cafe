@@ -1,0 +1,15 @@
+.bg-pattern {
+    background-image: url("../../assets/pattern.png");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+  }
+  .gallery-text-container {
+    border-image: url("../../assets/box.png");
+    border-image-slice: 50 fill;
+    border-image-width: 1rem;
+    width:80%;
+  }

@@ -1,11 +1,10 @@
 import React, { useState } from 'react'
-import { Container, Row, Col } from 'react-bootstrap'
-import Button from 'react-bootstrap/Button';
-import Image from 'react-bootstrap/Image';
+import { Container, Row, Col, Image } from 'react-bootstrap'
+
 import AppNavbar from '../components/navbar';
 import AppFooter from '../components/footer';
-import Data from './MenuData';
-import MenuCategories from './MenuCategories';
+import Data from '../components/menu/MenuData';
+import MenuCategories from '../components/menu/MenuCategories';
 
 
 
@@ -21,12 +20,9 @@ const filterItems = (cat) => {
 
   return (
     <div>
-    <header className="App-header">
-        <AppNavbar />
-    </header>
-
+    <AppNavbar />
     <section >
-      <div className='text-center bg-image d-flex justify-content-center'>
+      <div className='text-center bg-image d-flex justify-content-center' id='menu-banner'>
         <div className='bg-image-text-container'>
           <div className='bg-image-text-bg mx-auto'>
             <h1><span>MENU</span></h1>
@@ -35,8 +31,7 @@ const filterItems = (cat) => {
       </div>        
     </section>
 
-    <section className='.bg-pattern'>
-
+    <section>
     <Container>
       <MenuCategories 
           menuCategories = {menuCategories} 
@@ -45,16 +40,16 @@ const filterItems = (cat) => {
         />
       <Row>
         {item.map((val) => (
-            <Col key={val.id} sm={6} md={4} className='card my-3 border-0'>
+            <Col key={val.id} sm={6} md={4} lg={3} className='my-3 border-0'>
                 <div className='card-img-top text-center'>
-                  <Image src={val.image} alt={val.alt} className="w-75"/>
-                </div>
-                <div className='card-body'>
-                  <div className='card-title'>
-                    {val.title} --- {val.price}
-                  </div>
-                  <div className='card-text'>
-                    {val.desc}
+                  <Image src={require('../assets/menu/' + val.image + '.jpg')} alt={val.title} className="rounded menu-item"/>
+                  <div className='py-2'>
+                    <div className='card-title'>
+                      {val.title}
+                    </div>
+                    <div className='card-price'>
+                      {val.price}
+                    </div>
                   </div>
                 </div>
               </Col>
