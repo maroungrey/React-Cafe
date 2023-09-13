@@ -5,7 +5,7 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import AppNavbar from '../components/navbar';
 import AppFooter from '../components/footer';
-import MapImg from '../assets/map.jpg'
+import MapImg from '../assets/map.webp'
 
 export default function ContactPage() {
   return (

@@ -42,7 +42,7 @@ const filterItems = (cat) => {
         {item.map((val) => (
             <Col key={val.id} sm={6} md={4} lg={3} className='my-3 border-0'>
                 <div className='card-img-top text-center'>
-                  <Image src={require('../assets/menu/' + val.image + '.jpg')} alt={val.title} className="rounded menu-item"/>
+                  <Image src={require('../assets/menu/' + val.image + '.webp')} alt={val.title} className="rounded menu-item"/>
                   <div className='py-2'>
                     <div className='card-title'>
                       {val.title}

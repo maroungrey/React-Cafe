@@ -73,12 +73,12 @@ max-width:60%
   width:200px;
 }
 #menu-banner {
-  background-image: url("./assets/menu-banner.jpg");
+  background-image: url("./assets/menu-banner.webp");
 }
 #about-banner {
-  background-image: url("./assets/about-banner.jpg");
+  background-image: url("./assets/about-banner.webp");
 }
 #contact-banner {
-  background-image: url("./assets/contact-banner.jpg");
+  background-image: url("./assets/contact-banner.webp");
 }
 

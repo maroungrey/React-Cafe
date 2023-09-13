@@ -24,7 +24,7 @@ export default function HomeCarousel() {
               {
                   galleryData.map((item)=>(
                       <Carousel.Item>
-                          <Image src={require('../../assets/' + item.image + '.jpg')} className="d-block w-100" fluid/>
+                          <Image src={require('../../assets/' + item.image + '.webp')} className="d-block w-100" fluid/>
                       </Carousel.Item>
                       ))
               }

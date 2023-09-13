@@ -10,7 +10,7 @@ export default function Parallax() {
             <ParallaxProvider>
                 <ParallaxBanner 
                             layers={[
-                                { image: require('../../assets/banner-4.jpg'), speed: -20 },
+                                { image: require('../../assets/banner-4.webp'), speed: -20 },
                             ]}
                             className=""
                 style={{ height: '500px' }} />

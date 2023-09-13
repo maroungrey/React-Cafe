@@ -8,7 +8,7 @@ export default function Gallery() {
         <Container className='pt-5 line-border'>
             <Row>
                 <Col xs={12} lg={6} className="p-0 d-flex justify-content-center">
-                    <Image src={require('../../assets/gal-1.jpg')} fluid/>
+                    <Image src={require('../../assets/gal-1.webp')} fluid/>
                 </Col>
                 <Col xs={12} lg={6} className='bg-pattern p-0 d-flex justify-content-center align-items-center'>
                     <div className="text-center p-3 my-5 mx-auto gallery-text-container">
@@ -24,10 +24,10 @@ export default function Gallery() {
             </Row>
             <Row>
                 <Col xs={12} lg={6} className="p-0 d-flex justify-content-center">
-                    <Image src={require('../../assets/gal-2.jpg')} fluid/>
+                    <Image src={require('../../assets/gal-2.webp')} fluid/>
                 </Col>
                 <Col xs={12} lg={6} className="p-0 d-flex justify-content-center">
-                    <Image src={require('../../assets/gal-3.jpg')} fluid/>
+                    <Image src={require('../../assets/gal-3.webp')} fluid/>
                 </Col>
             </Row>
             <Row>
@@ -41,7 +41,7 @@ export default function Gallery() {
                     </div>   
                 </Col>
                 <Col xs={12} lg={6} className="p-0 d-flex justify-content-center">
-                    <Image src={require('../../assets/gal-4.jpg')} fluid/>
+                    <Image src={require('../../assets/gal-4.webp')} fluid/>
                 </Col>
             </Row>
         </Container>             
